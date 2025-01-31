@@ -4,8 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegatable-resources</title>
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- font-awesome-cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+           .sora-font{
+        font-family: "Sora", serif;
+      }
+    </style>
 </head>
-<body>
+<body class="sora-font">
+    <!-- header -->
+     <header class="max-w-screen-xl mx-auto bg-gradient-to-b from-[#FFFFFF] to-[#F1EDE5] mb-20">
+        <!-- navbar -->
+        <div class="navbar bg-base-100 lg:mb-16">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <div><img src="./c2-assets/logo-header.png" alt=""></div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Product</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact us</a></li>
+                </ul>
+                </div>
+                <div class="navbar-end space-x-5">
+                <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div><i class="fa-solid fa-cart-shopping"></i></div>
+                <a class="btn bg-white border-[#179800]">Login</a>
+                <a class="btn text-white bg-[#179800]">Register</a>
+                </div>
+            </div>
+          <!-- just-responsive -->
+           <div class="w-full mx-auto lg:hidden border-2 border-[#179800] mb-10"></div>
+
+           <!-- banner-part -->
+            <section>
+                <div class="text-center space-y-6">
+                <h1 class="text-4xl px-7 lg:text-5xl font-bold">Freshness <span class="text-[#179800]">You Can <br>
+                    Count</span> On, Prices You’ll Love!</h1>
+                    <p class="lg:w-2/4 px-8 lg:px-2 mx-auto">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+                    <img class="mx-auto" src="./c2-assets/hero-vegetables.png" alt="">
+                </div>
+            </section>
+        </header>
+     <!-- main -->
+      <main class="max-w-screen-xl mx-auto">
+        <section class="mb-20">
+        <!-- service-section -->
+         <h1 class="text-3xl font-bold text-start mx-auto text-[#179800] pl-12">Sercice</h1>
+         <!-- card -->
+         <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 px-12">
+            <!-- card-1 -->
+            <div class="card w-96 bg-[#EFEBE3]">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./c2-assets/service.png"
+                    class="bg-white rounded-full border-8 border-white"/>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">24/7 Services</h2>
+                  <p>service can refer to the work required to complete a contract or the activities that help people understand the value of work</p>
+                </div>
+              </div>
+              <!-- card-2 -->
+              <div class="card w-96 bg-[#EFEBE3]">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./c2-assets/delivery.png"
+                    class="bg-white rounded-full border-8 border-white"/>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Fast Delivery</h2>
+                  <p>First delivery can refer to the first time a seller delivers a product to a buyer, or the first attempt a delivery service makes to deliver a package to a recipient. </p>
+                </div>
+              </div>
+              <!-- card-3 -->
+              <div class="card w-96 bg-[#EFEBE3]">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./c2-assets/healthy.png"
+                    class="bg-white rounded-full border-8 border-white"/>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Healthy Products</h2>
+                  <p>Healthy products are foods, drugs, cosmetics, and other items that contribute to good health.</p>
+                </div>
+              </div>
+          </div>
+       </section>
+      </main>
+      <!-- footer -->
+       <footer></footer>
     
 </body>
 </html>
+
+
+
+
+<li><a>Product</a></li>
+<li><a>Services</a></li>
+<li><a>Contact us</a></li>
+</ul>
+</div>
+<div class="navbar-end space-x-5">
+<div><i class="fa-solid fa-magnifying-glass"></i></div>
+<div><i class="fa-solid fa-cart-shopping"></i></div>
+<a class="btn bg-white border-[#179800]">Login</a>
+<a class="btn text-white bg-[#179800]">Register</a>
+</div>
+</div>
