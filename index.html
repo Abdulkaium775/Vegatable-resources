@@ -28,54 +28,43 @@
   <!-- header -->
   <header class="max-w-screen-xl mx-auto bg-gradient-to-b from-[#FFFFFF] to-[#F1EDE5] mb-20">
     <!-- navbar -->
-    <div class="navbar bg-base-100 lg:mb-16">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
-          </div>
-          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li><a>Item 1</a></li>
-            <li>
-              <a>Parent</a>
-              <ul class="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
-              </ul>
-            </li>
-            <li><a>Item 3</a></li>
-          </ul>
-        </div>
-        <div><img src="./c2-assets/logo-header.png" alt=""></div>
+    <nav  class="container lg:mx-auto flex  justify-between px-5 lg:px-14  mb-10 pt-5">
+      <div>
+        <img class="lg:w-[120px] lg:h-[50px]" src="./c2-assets/logo-header.png" alt="">
       </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Product</a></li>
-          <li><a>Services</a></li>
-          <li><a>Contact us</a></li>
+      <div class="hidden md:block">
+        <ul class="flex lg:flex lg:space-x-5">
+          <li>
+            <a href="#" class="font-normal text-[#111111]">Product</a>
+          </li>
+          <li>
+            <a href="#" class="font-normal text-[#111111]">Services</a>
+          </li>
+          <li>
+            <a href="#" class="font-normal text-[#111111]">Contract Us</a>
+          </li>
         </ul>
       </div>
-      <div class="navbar-end space-x-5">
-        <div><i class="fa-solid fa-magnifying-glass"></i></div>
-        <div><i class="fa-solid fa-cart-shopping"></i></div>
-        <a class="btn bg-white border-[#179800]">Login</a>
-        <a class="btn text-white bg-[#179800]">Register</a>
+      <div class="lg:space-x-2 hidden md:block">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <button class="bg-transparent border border-[#179800] rounded-lg lg:px-7 lg:py-1">Login</button>
+        <button class="bg-[#179800] text-white border  rounded-lg lg:px-7 lg:py-1">Register</button>
       </div>
-    </div>
+      <div class="lg:hidden text-[#179800]" ><i class="fa-solid fa-bars"></i></div>
+     </div>
+    </nav>
     <!-- just-responsive -->
     <div class="w-full mx-auto lg:hidden border-2 border-[#179800] mb-10"></div>
 
     <!-- banner-part -->
     <section>
       <div class="text-center space-y-6">
-        <h1 class="text-4xl px-7 lg:text-5xl font-bold">Freshness <span class="text-[#179800]">You Can <br>
+        <h1 class="text-4xl px-7 lg:text-5xl font-bold animate-pulse">Freshness <span class="text-[#179800]">You Can <br>
             Count</span> On, Prices You’ll Love!</h1>
         <p class="lg:w-2/4 px-8 lg:px-2 mx-auto">Shop your daily essentials at unbeatable prices. From fresh produce to
           pantry staples, we’ve got you covered every day!</p>
-        <img class="mx-auto" src="./c2-assets/hero-vegetables.png" alt="">
+        <img class="w-3/4 mx-auto " src="./c2-assets/hero-vegetables.png" alt="">
       </div>
     </section>
   </header>
@@ -83,13 +72,13 @@
   <main class="max-w-screen-xl mx-auto">
     <!-- service-section -->
     <section class="mb-20 space-y-20">
-      <h1 class="text-3xl font-semibold text-start mx-auto text-[#179800] pl-6 lg:pl-12">Sercice</h1>
+      <h1 class="text-3xl font-semibold text-start mx-auto text-[#179800] pl-6 lg:pl-12">Services </h1>
       <!-- card -->
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 px-6 lg:px-12 ">
         <!-- card-1 -->
         <div class="card  bg-[#EFEBE3]">
           <figure class="px-10 pt-10">
-            <img src="./c2-assets/service.png" class="bg-white rounded-full border-8 border-white" />
+          <img src="./c2-assets/service.png" class="bg-white rounded-full border-8 border-white" />
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">24/7 Services</h2>
@@ -148,7 +137,7 @@
             <div class="hero-content w-full  lg:w-full  flex-row bg-white rounded-lg">
               <img
                 src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAvQMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAgMEBgcFAQj/xAA/EAABAwIEBAMECAQEBwAAAAABAAIDBBEFEiExBkFRYRMicQcygZEUI0JSobHB0UNygvAVM1NiJDSDkrLC4f/EABoBAAIDAQEAAAAAAAAAAAAAAAADAQIEBQb/xAAoEQACAgEEAQQBBQEAAAAAAAAAAQIDEQQSITFBBRMiYTJCUYGRoRX/2gAMAwEAAhEDEQA/ANxQhCABeL1eIA5HEWPU2AUbaipa95e/JGxv2j0vyUjBsThxWjZUwZgHNByu3as29q2MvnxelwmkfL/w4zzMtZuc2ym/OwzdtlLoeI3Nnjio3tEkbQ1uYWD/APaUmdrjL6N1ek9yrK7NNC9UPC6+PEKNlRFz0c3m13MFS7i105PJiknF4Z6heXQSgg9Xl1ExTEKXDKOSrrZRFCweYnn2HUrK8e46xHFC6KicaGlOgDXfWOHc8vgqymo9mijTTufxNExnijCcHOSrqgZR/Cj8zviBsqrWe0uRzy3DsLu3k+eW1/6QP1WetaNbDQ/NOsDgdNB2SJXPwdqn0uqP58lum9oONAXyUkfbwyf1SovaDi4aS9tM/wD6ZH6qsRsbL5X3PdNywEHK25Cp7kv3NT0GmfG0c4p40rcac2mxBzaaAusyGJxDXkfeJ39FWxK6Z7nPEheCW+LbUkafLQKXiuHx1sBjma466abFc5+GVmSJjZA6OPTUua63TRMUtxjlRKp7Yrj6L5wBTV9VI2ipKpjXRDO6qNM0ufc63OvyvyC2CijkhpIY55BNM1gD5A3LmPM25LEMAfLEZHU1Q+GQktD4nZS03/EaK8YPxpU0sop8cY18ejfpUQ1H8zf1CmE0uzPrNLZPDhyv9L8vU1BPHURMlge18bxdrmm4ITqecfAIQhAAhCEAC8XqSTugDOPbFFDBR0NexpFUZTFmGzm2vr8tPUrMI66o0ADb3sW23V+9sGLU9Y6iw6llEj4HufMWnRpsAB67rP6Sne1wld58x0b8EmaR19I5qCRoHBvE9TRNqrxOqWuYywz2AeL7mx5fkptZxfjs2kTaenb0YMx+ZVWwps2H5jcBx8wI2PYrszYlFJCCYx4h5AWKTva4R0VpKpS3yjlsi1WPY2/WTEqgfyPy/kob8XxFw89bVO/mnd+6RUDxTuR2S4KFz7W/JG5vyaPZrX6UiHW1tdUxtbUSSTsa67WySF1j13TMTQ/R8Dmjq1WelwQS/wCa0/AJVTgboxdpBU8icQT4eCuGmcBeL6wfI/JNtcOi6VTSSQmzwQeoUVzBIfrNHff/AHVcGhSaGw/obFS6eoDbC1z+a5sofC8tlFiPxQyZwG6qxnEjsgRzXJaLlKFC3NoNCoFJPd1ifVdimlDgeyshNmY9DdLhwp3ktBAcduoXTbSmSMAW1CdiAcGuHRSo2i1sqnBjlJ+RnBMTqMAnsLyULz54vud2/stFgmZURMlicHRvaHNI5gqjyUhlbo0XsuhwdVPpp5cLlJLCDJATyF/M38QU+vK4Zg1lcbI+5HtdltQvAbr1NOUCELwoAHd9Fl/HfHLnukw3BJixgOWapabE9mH9fkut7TuJH4dRtw6jeWz1DSZHjdjP3KyJpD763CpOWDdpaN3ykKHmNzqe66FKwMyggHsocLQD6KdDa4Wdts7lUEuSSJr8iD1Kdia55ytF77jomWgWBtsdVJZLls9mndV2mvckuDsYbhUVs8rs3Y6rtw09OzLliZYqu0+JeA5pLrt5nv3XTZWtcC6I+b7QOyckjHbvk+zthgY24sWjlbZMVEkbxpo7uuacQfGLi/TKeSjOq3THKQSeWUXKnAhVNcskVMYcwggEWVerYRG4loIVkgpq6oaWyxiO22c+b5BPN4dhkP17pH33AsAqOLZdayqvhvJSnMZVReG4i49x33f/AIuXIHxyOjeLOboQtPj4dw1tx9E07vSKjhzCp3DxaVxJFswKjYxf/SrT4TM4pZPOuzQSXcdea71TwVSvuaGodG4bBxzfguI/D6nCn5Klg82jXN2O/wDdlG1o1V6uu6OE+TuUTrxb6hy6MbrfDRcGhqLMcdguiyoBO6tFi7I8nYins0DppfskOeKasp6tn8OQE+mx/BQ4ZrjUpyokDqd4B1LUzcZHXj+S/MNwlJigeZKGned3RNJ+QT6acR9gm6mZlPA+aU5Y42lzj0ATiq/tHrHUnC84YSHTOEYt31P5ICKy8GN8S4nLi2J1FTM43kftfZvILnxe+DsGhIqv88i+hOiVGLx26kn4JUuWdmpYWCZSA2DeZ3XQpw0PaSdLkKJTDLI1p+6nxlbDc8nXVMGxSJcjvDlc3kdQo8c188bj6LyokBa19/RQah5a8OabHdDL78PJKiqHNe6N5Nuv6JVPUzw1LWNc4fd53Cjhj6yWJtOxz5HaZR/fJaFw1wsyiayeo887hrre3YKFz0Lt1Ea1yRcHwmrq2+LUtMcfIE6lWeiwuClA8Ng21PX9Sp7WBp8oAOw0vZLAA31d21Kukca7VTtfPBHDA33GEA7n3br0M1vlZ+ak5QNSA311QXNt71vQKxnyQ3k66M+SQ3q9v/aU5OJnuvGQ1oGuYXukQt8ZmZ7A3X3mndBKxgRJG0i7dSPgVFqhHPE6GsYJoz1GoKlSNdG7U6nZyS4ZgHWAeN+6oxkXjkoOJ00+DT5S7xKN58kg5dj+6VFV7HNurPiEMc9NJTzDyOBI0WfwyGkqnUspOTNZpPLokvg7elt9yOJdos0FTpupbZHPjIG5FguVT7gDmrLw1QOq6+O4+ri87j16BRGWZYL3pQg5MvlIzw6aJn3WAfIJ1JZslLceYzkFTPag0vwOAcvGufkVc1XeOqU1OBPIBJjcHfDb9UDKfzRg88RbIAeQKcY0BrNOSn1cIJBLdbEFMOZkZE5trbJTO1GOBTTlkaTz0ulPuC6I89V69t2AcuS8cNpB7w3VRx4HNkicx24Gihy5nuDLOcTtbdSftF3Vd/gzB/puKeO5t44ddeZQyknhZZYeCOHvoNMKiqaDPIL6j3RyCuLGhrbWF+dh+C8hjDGAcuQ/NPDbTn+CmKwca2xzlkS0G2hsNrpWUBvRvVGg1t/KEgu8xBJLrX9FYUKAbyb8SvJXBrdTZeOkcCQ0tDhyBCjSAue1zi5jx9rQoyCXPI9GJHtPiWsUlwMRFtY+nReUUsssRMwFw4i40zDqlVBBaLczognyImbdh0udwoQfZzSeYAKmuOo9FBf7rfUKrLwI1Y27H9QbrM8cbavqPVafOQGyEnYfosvxSUSV9Qb3Gci/pokzXJ1fT+XJHd4bbPiTIfDaXynykD7wWrYHhrcNpBGbGV2r3d1n3sdqwK/EqJwbrGyeN1td7O/9fmtTTaq0vkZNfqJyl7fhHqEITznAmaqBlTTyQyi7HtLSnl4UAYjj2HPoKqWmePNG+1zzHVcYNJicDuNQtb47wE19N9NpWXqIm+doHvt/cLKwMkmot2S5Hc09ithnyMRA6t/NeA6FpGqdkAa/TY7JL7OF2qhqxwNZRb01WncE4caPCfGey0kmpuFmsOV0jGu2Lhc9ua2ejsKVoboLN0QuWYtZLbDC8ki2VlhyACL5Q7oEE6OSZbEFvJw1I5K5yT15Aa07gFNOs15fG4XO9ymHOli8rzHbkTfVeQ1DXvLJGgOHJBOB1pjieXOAa4/aPNJkd4wtGQ8cyEp2S5acpHRejowWUYA8b5GBjdwkOdmfe+jV6932Wm7ufZMu+6OfNBKQPkJY542uAFGd9hv2gbnslSPBaAPcGyZdmsb6OcNewVWMRAxesZT0UsxOmob36LOJRclx3NyVZOLK9s0oooD5IzdxH4BVlxI1vfSyTJ5Z29FXsqy/JaPZKXN4rlY070jremdl1syx/wBj8fi8S1ko2hpLHsXOFv8AxK2Baq+jja15uYIQhXMgIQhAHhAVA404OMpfX4RHd+8kDefdv7LQF4jBeuyVbzE+dpnlpyPuHDkevdIZLa45FbZxHwjhWPNc+oiMVRyqIrBw9evxWX49wTiOGOLqOWLEIxyhcM4/pv8AkUtxOrVrYS7OKx4jka46hpBW0Ye9slKzwzcFgI7rCJpXwyGOdjo3jcPBBHwK1XgPFhXYTE0EeJE3I4HqP7CouGRqmrIcFsDtGu6hJIHunY7FJLha9rtduOiM2muo5K5yxMliMsm3J11C+jPZUCbOXi1rWt+SnOFxycE3lZsLt9FBZNoU13PK75JuSQHQusOnMpJaDu8uHNJJDRowAdSghI8Jdbkxo+ZTUkgy66ApDprHykuP4Jh0nmOz37+igYkLccpBkbc/ZaFy8VxEUlO+zm+K7exuva6tZTxOkdIBbdzjt2HdVCvrhVTvka60f2Qd/UpU54Nun07seX0QpfEu6TMNSTcqDNJr0T88nQ/BIw3D6jGMRgoKQfWzPsL7NHN3wCpBNs6ttihH6NO9kGHGnwapxCRtnVktmnqxug/HMtAUTCqCHC8OpaCnFoqeMRt72G6lralhHmLJ75uQIQhSUBCEIAFFrTVBo+iCMnmXlSkIAqtZJXuAbUiVrezbD8FBJIPMK72SHwQye/Ex3qEAUaop4KluWpgjlaf9RoKhwYRTULnTYbCynlda/h6A+oV+/wANozvTs+SScKoib+A1Q1kvGcovKK3Q4kJ266vB87Od1NbIHjMwgjovMW4bLr1OEy+BUgatOrZPXv3VXjx0QVjqXEqeSlnabOA1ukvMezbGlXrdX/RaHPtzy9ikOnIHvMPQrkR4zTvAy1URHR2icdXsJ0kjtzPRRuQp0zi+UTXVNxq9rQeijuma/bM7uufNikcZs6WJtud1yK7iWjhbkM7pHEaiIfqjcWjTJ9I78tRplLtSbZW7lcfFsbgomODnAyjaJm/9R5Kr13ElRO3JT2hj2Njdx9SuK6Qk339VVs3VaVLmZ0MQxOevfmncAB7jG6Nb8FDfKXC5Nim7hw/ZNuJfIyNjS573BjGN3c47BRjJrlJRj9Cg8k5QC4k2AAuSegHNbJ7OeE/8GpDiFa3/AI+pYPKf4LDrl9eqh8BcBf4TK3E8ZySVoH1cI1bD3vzd+S0EbJ0IY5OPqtV7nxj0C9QhNMIIQhAAhCEACEIQAIQhAAhCEAeWHRc/GMGoMWiDK6BryPdeNHN9CuimamJ8sWWOV0Z+8FDSfZaMpQeYvDM04j4IkpnB9FVtlDjpHNo4fHYqm12G1tMD41NKwX94C7fmFr9Rg1YHFzXCXvfUqG+hq2e9BIPQX/JLdMX0dGv1W5LE+TFnvtudU055J13WwVGEwVX/ADGHtkP+6LX52UN3DmE5vPhkN+hYj2mWfqOfBlBktvsnaSGprJAyjpqicn/TjJA9XbD4rW4MEo4TenwyFndsI/ZT46OpcAI6d9hsA2wUqsTLXPwjOMK4Lr6hwdiUraWLfJH5pD+gV34c4dwHDquF4oGySh4tPM4ucw20IXYjwetcSPDy93OGqm02BOD2vnkFgb5W63V1FIyzusn2zuABerwL1SKBCEIAEIQgAQhCABCEIAEIQgAQhCABCEIAEIQgDwo3QhAAhCEAeoQhAAhCEACEIQAIQhAH/9k="
-                class="rounded-lg shadow-2xl w-12" />
+                class="brounded-lg shadow-2xl w-12" />
               <div>
                 <span><i class=" text-orange-400 fa-solid fa-star"></i> 4.5</span>
                 <h1 class="font-bold">Onion 1 KG</h1>
@@ -283,11 +272,11 @@
       <h1 class="text-3xl text-[#179800] pl-4 lg:pl-14 mb-10">Arrival & Offers</h1>
 
       <!-- card -->
-      <div class="flex flex-col lg:flex-row gap-5 px-4 lg:px-14">
+      <div class="flex flex-col lg:flex-row justify-between gap-5 px-4 lg:px-14">
         <!-- card-1 -->
-        <div class="flex lg:gap-14 bg-[#115414] rounded-lg px-4 lg:pl-10 pt-10 pb-4">
+        <div class="flex lg:gap-14 bg-[#115414] rounded-lg px-4 lg:pl-10 pt-10 pb-3">
 
-          <div class="space-y-3 ">
+          <div class="space-y-3 flex flex-col justify-center items-center">
             <img class="w-3/4" src="./c2-assets/dawat-logo.png" alt="">
             <button class="btn bg-[#63B76D] lg:w-60 text-white border-none">Cook Exotic Dishes</button>
             <h1 class="lg:text-3xl  text-white">UP to <span class="font-bold">20% OFF</span></h1>
@@ -298,7 +287,7 @@
         <!-- card-2 -->
         <div class="flex bg-[#102861] rounded-lg px-5 lg:pt-10 pb-2">
 
-          <div class="space-y-2">
+          <div class="space-y-2 flex flex-col justify-center items-center">
             <img src="./c2-assets/india-gate-logo.png" alt="">
             <button class="btn bg-[#2A4D97] text-white border-none">World’s No.1 Rice</button>
             <h1 class="lg:text-2xl lg:w-[181px] text-white">UP to <span class="font-bold">40% OFF</span></h1>
@@ -354,27 +343,27 @@
                 Exclusive training tips, ticks, product deals and more
               </p>
               <input type=" text" placeholder="Enter Email" class=" w-3/4 lg:w-96 lg:h-14 pl-5 rounded-lg py-2 "> <br>
-              <button class="btn text-white bg-[#179800]  ">Subscribe</button>
+              <button class="btn text-white bg-[#179800] w-40 h-10 ">Subscribe</button>
             </div>
           </div>
         </div>
         
 
    <div class=" mb-96 bg-[#179800] pb-20 pt-64 text-white grid grid-cols-1 gap-10 lg:grid-cols-3 items-end px-16 lg:px-28 ">
-    <div>
+    <div class="space-y-2">
       <img src="./c2-assets/logo-footer.png" alt="">
       <p class="w-3/4">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
     </div>
 
-    <div>
+    <div class="space-y-2">
       <p>Product</p>
       <p>Services</p>
       <p>Contract Us</p>
     </div>
 
-    <div>
+    <div class="space-y-2">
       <h1>Folllow Us</h1>
-      <div class="space-x-3">
+      <div class="space-x-4">
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-invision"></i>
@@ -382,12 +371,8 @@
       </div>
     </div>
     
-
   </div>
   </footer>
-
-
-      
 </body>
 </html>
 
